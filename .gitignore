@@ -58,3 +58,7 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Bowmasters Prototype/Library/
+Bowmasters Prototype/Temp/
+Bowmasters Prototype/obj/
+Bowmasters Prototype/.idea/
