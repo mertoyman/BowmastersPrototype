@@ -2,7 +2,6 @@
 using UnityEngine;
 using WeaponSystem;
 using Zenject;
-using Zenject.SpaceFighter;
 
 namespace WeaponSystem
 {
