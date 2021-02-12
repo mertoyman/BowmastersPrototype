@@ -29,8 +29,9 @@ namespace WeaponSystem
             {
                 other.gameObject.GetComponent<ITakeDamage>().DamageAmount(50f);
             }
-
-            DestroyProjectile();
+            
+            if(!other.gameObject.GetComponent<ProjectileView>())
+                DestroyProjectile();
         }
 
         private void DestroyProjectile()

@@ -23,9 +23,11 @@ namespace PlayerSystem
 
         async public void RandomShoot()
         {
-            await new WaitForSeconds(2);
-            float randomAngle = -UnityEngine.Random.Range(30.0f, 50.0f);
-            _projectileService.SpawnProjectile(-30, randomAngle, _npcView.ShootPos, false);
+            await new WaitForSeconds(5);
+            float randomAngle = -UnityEngine.Random.Range(10.0f, 30.0f);
+            float randomForce = -UnityEngine.Random.Range(25, 40);
+            _projectileService.SpawnProjectile(randomForce, randomAngle, _npcView.ShootPos, false);
+            
         }
         
         public void SetHealthBarFirst(float health)

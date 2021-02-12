@@ -30,6 +30,7 @@ namespace PlayerSystem
             {
                 Debug.Log("Force " + force + "Angle " + angle);
                 _projectileService.SpawnProjectile(force, angle, _playerView.ShootPos, true);
+                Debug.Log("Shot taken");
             }
            
         }

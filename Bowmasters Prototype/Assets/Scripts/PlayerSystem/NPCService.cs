@@ -25,6 +25,7 @@ namespace PlayerSystem
         
         public void NPCShoot()
         {
+            
             _npcController.RandomShoot();
         }
 

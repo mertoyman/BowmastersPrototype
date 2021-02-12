@@ -18,7 +18,6 @@ namespace GameSystem
             _playerService = playerService;
             _npcService = npcService;
             _cameraService = cameraService;
-            signalBus.Subscribe<SignalDestroyProjectile>(ChangeTurn);
             signalBus.Subscribe<SignalSpawnProjectile>(DisableService);
         }
 
@@ -27,13 +26,6 @@ namespace GameSystem
             if (projectile.projectileInfo.isPlayer)
             {
                 _playerService.CanShoot = false;
-            }
-        }
-
-        void ChangeTurn(SignalDestroyProjectile projectile)
-        {
-            if (projectile.projectileInfo.isPlayer)
-            {
                 _npcService.NPCShoot();
             }
             else
