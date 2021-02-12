@@ -2,6 +2,7 @@
 using PlayerSystem;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace PlayerSystem
 {
@@ -40,6 +41,11 @@ namespace PlayerSystem
         public override void SetBarHealth(float value)
         {
 	        healthBar.value -= value;
+	        
+	        if (healthBar.value <= 0)
+	        {
+		        SceneManager.LoadScene("LoseScreen");
+	        }
         }
 	}
 }

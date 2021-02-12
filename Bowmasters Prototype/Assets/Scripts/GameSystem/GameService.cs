@@ -44,7 +44,6 @@ namespace GameSystem
         
         public void Initialize()
         {
-            Debug.Log("Started");
             _playerService.CanShoot = true;
             _cameraService.OnGameStart();
         }

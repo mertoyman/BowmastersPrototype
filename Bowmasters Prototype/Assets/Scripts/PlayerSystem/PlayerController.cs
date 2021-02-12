@@ -26,7 +26,7 @@ namespace PlayerSystem
         {
             _playerView.SetShootInfo(force, angle,gettingInput);
             
-            if (!gettingInput)
+            if (!gettingInput && _projectileService != null)
             {
                 Debug.Log("Force " + force + "Angle " + angle);
                 _projectileService.SpawnProjectile(force, angle, _playerView.ShootPos, true);

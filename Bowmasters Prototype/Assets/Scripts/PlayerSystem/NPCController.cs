@@ -25,7 +25,7 @@ namespace PlayerSystem
         {
             await new WaitForSeconds(2);
             float randomAngle = -UnityEngine.Random.Range(30.0f, 50.0f);
-            _projectileService.SpawnProjectile(-100, randomAngle, _npcView.ShootPos, false);
+            _projectileService.SpawnProjectile(-30, randomAngle, _npcView.ShootPos, false);
         }
         
         public void SetHealthBarFirst(float health)

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using PlayerSystem;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class NPCView : CharacterView
@@ -31,7 +32,7 @@ public class NPCView : CharacterView
 
             if (healthBar.value <= 0)
             {
-                
+                SceneManager.LoadScene("WinScreen");
             }
         }
 }
